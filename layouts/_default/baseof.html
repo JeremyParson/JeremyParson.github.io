@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/css/baseof.css">
+  <link rel="stylesheet" href="/css/reveal.css">
+  <script src="/js/reveal.js"></script>
+  {{ block "external" .}}
+  {{end}}
+</head>
+
+<body>
+  <div class="website-container">
+    <nav class="navigation">
+      <ul class="navigation-ul">
+        {{$currentPage := .}}
+        {{ range .Site.Menus.main }}
+        <li class="navigation-item{{ if $currentPage.HasMenuCurrent "main" . }} active{{ end }}">
+          <a href="{{ .URL }}">
+            {{ .Pre }}
+            <span> {{ .Name }} </span>
+          </a>
+        </li>
+        {{ end }}
+      </ul>
+    </nav>
+
+
+    <header class="header-section">
+      {{ block "header" .}}
+      {{end}}
+    </header>
+    <main class="main-section">
+      {{ block "main" .}}
+      {{end}}
+    </main>
+    <footer>Page Footer</footer>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+.content {
+  width: 100%;
+  display: flex;
+}
+
+.content-section-list {
+  width: 100%;
+}
+
+.content-section {
+  width: 100%;
+}

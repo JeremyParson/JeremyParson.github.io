@@ -1,0 +1,25 @@
+{{ define "external" }}
+<link rel="stylesheet" href="/css/blogpost.css">
+{{end}}
+
+{{ define "header"}}
+<h1>{{.Title}}</h1>
+{{end}}
+
+{{ define "main" }}
+<p> Published on {{.PublishDate.Format "January 2, 2006"}} </p>
+<p>{{.Params.description}}</p>
+<hr>
+<div class="content">
+  <ul class="content-section-list">
+    {{ range .Params.sections }}
+    <li>{{.}}</li>
+    {{ end }}
+  </ul>
+
+  <section class="content-section">
+    {{.Content}}
+  </section>
+</div>
+
+{{ end }}

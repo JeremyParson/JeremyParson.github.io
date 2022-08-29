@@ -1,0 +1,44 @@
+.reveal {
+  position: relative;
+  opacity: 0;
+}
+
+.reveal.active {
+  opacity: 1;
+}
+
+.reveal.inactive {
+  opacity: 0;
+}
+
+.active.fade-in-bottom {
+  animation: fade-in-bottom 1s ease-in;
+}
+
+.inactive.fade-out-bottom {
+  animation: fade-out-bottom 1s ease-in;
+}
+
+@keyframes fade-in-bottom {
+  0% {
+    translate: translateY(50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out-bottom {
+  0% {
+    translate: translateY(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+}

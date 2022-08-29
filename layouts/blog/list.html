@@ -1,0 +1,15 @@
+{{ define "header"}}
+<h1>My Tech Blog</h1>
+{{ end }}
+
+{{ define "main" }}
+<ul>
+  {{ range .Pages }}
+  <li>
+    <a href="{{ .Permalink }}"><h3>{{ .Title }}</h3></a>
+    <p> {{.Params.description}} </p>
+    <p> Published on {{.PublishDate.Format "January 2, 2006"}} </p>
+  </li>
+  {{ end }}
+</ul>
+{{ end }}

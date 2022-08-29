@@ -1,0 +1,10 @@
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15em;
+}
+
+/* .short-biography {
+  position: relative;
+} */
