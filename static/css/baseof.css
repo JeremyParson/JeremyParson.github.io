@@ -13,7 +13,9 @@ header {
 }
 
 header > h1 {
-  height: 8em;
+  font-family: 'Noto Sans Balinese', sans-serif;
+  font-size: 3em;
+  height: 6em;
   text-align: center;
   color: whitesmoke;
   position: relative;
@@ -22,9 +24,18 @@ header > h1 {
 }
 
 footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   position: relative;
   background-color: grey;
   flex-shrink: 0;
+  padding: 2%;
+  height: 3em;
+}
+
+footer > svg {
+  padding-right: 1em;
 }
 
 .website-container {
@@ -35,7 +46,6 @@ footer {
 }
 
 .navigation {
-  display: none;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -56,6 +66,7 @@ footer {
 }
 
 .navigation-item > a {
+  font-family: 'Noto Sans Balinese', sans-serif;
   color: black;
   text-decoration: none;
 }
@@ -66,4 +77,17 @@ footer {
 
 .main-section {
   flex: 1 0 auto;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1000px) {
+  header > h1 {
+    height: 10em;
+    font-size: 2em;
+  }
 }

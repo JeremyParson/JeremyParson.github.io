@@ -1,5 +1,5 @@
 ---
-title: My Tech Blog
+title: Tech Blog
 linktitle: Blog
 menu:
   main:
