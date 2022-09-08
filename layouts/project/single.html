@@ -1,10 +1,21 @@
+{{ define "external" }}
+<link rel="stylesheet" href="/css/project.css">
+{{ end }}
+
 {{ define "header"}}
 <h1>{{.Title}}</h1>
 {{end}}
 
 {{ define "main" }}
-<p> Published on {{.PublishDate.Format "January 2, 2006"}} </p>
-<p>{{.Params.description}}</p>
-<hr>
-{{.Content}}
+<a href="{{.Params.github}}" class="repo" id="github-button"><p>Goto Github</p></a>
+<a href="{{.Params.demolink}}" class="repo" id="demo-button"><p>View Demo</p></a>
+<div class="content-section">
+  <p> Published on {{.PublishDate.Format "January 2, 2006"}} </p>
+  <div>
+    <h2>Summary</h2>
+    <p>{{.Params.description}}</p>
+  </div>
+  {{.Content}}
+</div>
+
 {{ end }}

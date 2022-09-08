@@ -52,7 +52,14 @@
       </svg>
     </footer>
   </div>
+  <div id="particles-js"></div>
 </body>
 <script src="/js/reveal.js"></script>
+<script src="/libs/particles/particles.min.js"></script>
+<script>
+  particlesJS.load('particles-js', '/assets/particles.json', function () {
+    console.log('callback - particles.js config loaded');
+  });
+</script>
 
 </html>

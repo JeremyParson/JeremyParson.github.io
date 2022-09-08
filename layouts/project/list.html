@@ -1,3 +1,7 @@
+{{ define "external" }}
+<link rel="stylesheet" href="/css/projects.css">
+{{ end }}
+
 {{ define "header"}}
 <h1>My Projects</h1>
 {{ end }}
@@ -5,7 +9,7 @@
 {{ define "main" }}
 <ul>
   {{ range .Pages }}
-  <li>
+  <li class="project">
     <a href="{{ .Permalink }}"><h3>{{ .Title }}</h3></a>
     <p> {{.Params.description}} </p>
     <p> Published on {{.PublishDate.Format "January 2, 2006"}} </p>
