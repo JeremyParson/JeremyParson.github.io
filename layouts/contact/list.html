@@ -1,0 +1,21 @@
+{{ define "external" }}
+<link rel="stylesheet" href="/css/contact.css">
+<script src="https://cdn.jsdelivr.net/gh/jquery/jquery@3.2.1/dist/jquery.min.js"></script>
+<script src="/js/contact.js"></script>
+{{ end }}
+
+{{ define "header"}}
+<h1>{{.Title}}</h1>
+{{end}}
+
+{{ define "main" }}
+<form onsubmit="">
+  <label>Name</label>
+  <input type="text" class="text-box"/>
+  <label>Email</label>
+  <input type="text" class="text-box"/>
+  <label>Message</label>
+  <textarea class="text-area"></textarea>
+  <input type="submit" class="submit"/>
+</form>
+{{end}}

@@ -1,6 +1,14 @@
 main {
   align-self: center;
   width: 75%;
-  background-color: rgba(0, 0, 0, 0.5);
   padding: 5%;
+}
+
+.main-section {
+  background-color: rgba(175, 193, 214, 0.95);
+}
+
+.jeremy-image {
+  margin: auto;
+  width: 80%;
 }

@@ -22,7 +22,7 @@
   border-start-start-radius: 23px;
   border-start-end-radius: 23px;
   padding: 2em;
-  background-color: gray;
+  background-color: rgb(175, 193, 214);
   width: 80%;
   min-height: 25vh;
 }
@@ -30,5 +30,12 @@
 .content-section > div {
   padding: 2%;
   border-radius: 12px;
-  background-color: lightgray;
+  background-color: rgb(214, 202, 152);
+}
+
+#github-button, #demo-button{
+  background-color: rgb(171, 146, 191);
+  text-decoration: none;
+  color: black;
+  padding-top: 1em;
 }

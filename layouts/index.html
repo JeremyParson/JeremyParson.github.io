@@ -32,8 +32,8 @@
 
 {{define "main"}}
 <section class="buttons">
-  <button id="download-cv-button">Download CV</button>
-  <button id="contact-button">Contact</button>
+  <a id="download-cv-button" href="/assets/Resume V3.pdf" download="Jeremy Parson Resume.pdf">Download CV</a>
+  <button id="contact-button" onclick="window.open('mailto:jparsoncontact@gmail.com');">Contact</button>
 </section>
 <section class="short-biography">
   {{.Content}}
