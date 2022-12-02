@@ -33,6 +33,13 @@
   background-color: rgb(214, 202, 152);
 }
 
+img {
+  padding-top: 1em;
+  display: inline-block;
+  position: relative;
+  max-width: 100%;
+}
+
 #github-button, #demo-button{
   background-color: rgb(171, 146, 191);
   text-decoration: none;

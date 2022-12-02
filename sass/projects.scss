@@ -1,0 +1,15 @@
+@import "config";
+@import "utilities";
+@import "boilerplate";
+
+@include boilerplate;
+
+.project-card {
+  @include set-bg($color-dark-cornflower-blue);
+  @include glowing-border($color-purple-x11, $color-space-cadet);
+  margin-top: 4.5em;
+  padding: 1em;
+}
+
+.project-card__title {
+}

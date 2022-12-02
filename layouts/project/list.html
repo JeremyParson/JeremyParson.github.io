@@ -9,10 +9,10 @@
 {{ define "main" }}
 <ul>
   {{ range .Pages }}
-  <li class="project">
-    <a href="{{ .Permalink }}"><h3>{{ .Title }}</h3></a>
+  <li class="project-card">
+    <a href="{{ .Permalink }}" class="project-card__title"><h3>{{ .Title }}</h3></a>
     <p> {{.Params.description}} </p>
-    <p> Published on {{.PublishDate.Format "January 2, 2006"}} </p>
+    <b> Published on {{.PublishDate.Format "January 2, 2006"}} </b>
   </li>
   {{ end }}
 </ul>
